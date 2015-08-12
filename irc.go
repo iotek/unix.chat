@@ -35,7 +35,6 @@ func ircHandler(ws *websocket.Conn) {
 	for {
 		if err = message.Receive(ws, &clientmessage); err != nil {
 			delete(clients, current)
-			fmt.Println("client disconnected")
 			fmt.Println("client disconnect,", len(clients), " clients remain")
 			return
 		}
