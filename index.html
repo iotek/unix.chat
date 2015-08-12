@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="/irc.js"></script>
+	<link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+
+<body onload="document.getElementById('prompt').focus();" onclick="document.getElementById('prompt').focus();">
+	<div id="scr">
+		<tt id="console"></tt>
+		<tt class="prompt">#</tt>
+		<input type="text" id="prompt" onclick="$('prompt').keypress();"></input>
+	</div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+body, #scr, #prompt, .prompt, #console { background: black; color: lime; font-size: 14px; font-family: monospace, fixed; }
+body { margin: 0; }
+.prompt, #prompt { border: 0; outline: 0; }
+.prompt { float: left; width: 1%; }
+#prompt { float: right; width: 98% }
+#console { width: 100%; }
